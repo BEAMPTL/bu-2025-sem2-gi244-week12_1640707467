@@ -131,7 +131,7 @@ GameObject:
   - component: {fileID: 91542324}
   - component: {fileID: 91542323}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: 'ScoreText '
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -203,8 +203,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 24
+  m_fontSizeBase: 24
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -698,7 +698,7 @@ MonoBehaviour:
   - {fileID: 8767278657476668662, guid: 5a6677b07c7a99d4398241b58384ba4d, type: 3}
   - {fileID: 4220338274684187268, guid: 2e4dacc4c9946ee40b9064b472dac79f, type: 3}
   - {fileID: 5570047969998752377, guid: 6b26599e4de22dd408665ac92117d1da, type: 3}
-  scoreText: {fileID: 0}
+  scoreText: {fileID: 91542323}
   gameOverText: {fileID: 0}
   restartButton: {fileID: 0}
   titleScreen: {fileID: 0}
@@ -911,6 +911,7 @@ GameObject:
   - component: {fileID: 1611319333}
   - component: {fileID: 1611319332}
   - component: {fileID: 1611319331}
+  - component: {fileID: 1611319335}
   m_Layer: 0
   m_Name: Sensor
   m_TagString: Sensor
@@ -1011,6 +1012,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1611319335
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1611319330}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ee54e8143cb1ef34b84faa1ba5733212, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Sensor
+  penalty: 1
 --- !u!1 &1829648827
 GameObject:
   m_ObjectHideFlags: 0

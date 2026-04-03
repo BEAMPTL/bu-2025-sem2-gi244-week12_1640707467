@@ -34,7 +34,7 @@ public class GameManager : MonoBehaviour
 
     void Start()
     {
-        scoreText.text ="Score" + score;
+        scoreText.text = "Score" + score;
         StartGame();
     }
     public void UpdateScore(int score_)
@@ -57,6 +57,17 @@ public class GameManager : MonoBehaviour
             Instantiate(prefab);
             yield return new WaitForSeconds(spawnRate);
         }
+    }
+    public void RemoveScore(int amount)
+    {
+        score -= amount;
+
+        if (score < 0)
+        {
+            score = 0;
+        }
+
+        scoreText.text = "Score " + score;
     }
 }
 
